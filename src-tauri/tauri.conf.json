@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "rioluhub",
+  "productName": "RioluHub",
   "version": "0.1.0",
   "identifier": "com.mapleyf.rioluhub",
   "build": {
@@ -12,7 +12,7 @@
   "app": {
     "windows": [
       {
-        "title": "rioluhub",
+        "title": "RioluHub",
         "width": 800,
         "height": 600
       }

@@ -5,18 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-    <title>Tauri + React + Typescript</title>
+    <title>RioluHub</title>
   </head>
 
   <body>
-    <script type="module" src="/src/main.tsx"></script>
     <div style="
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 40px;
-      background-color: aqua;
+      /* background-color: aqua; */
     ">
       <button 
         id="refresh-btn"
@@ -61,6 +60,8 @@
         const iframe = document.querySelector('iframe');
         if (iframe) {
           iframe.src = iframe.src;
+          // wait for iframe to finish loading, then try to log statistics
+          // iframe.addEventListener('load', logAntStatistics, { once: true });
         }
       }
     </script>

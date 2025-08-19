@@ -1,8 +1,17 @@
-// Learn more about Tauri commands at https://tauri.app/develop/calling-rust/
+use scraper::{Html, Selector};
+use serde::Serialize;
+
+#[derive(Serialize)]
+struct PageContent {
+    results: Vec<String>,
+    html_content: String,
+}
+
 #[tauri::command]
 fn greet(name: &str) -> String {
     format!("Hello, {}! You've been greeted from Rust!", name)
 }
+
 
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
